@@ -1,0 +1,279 @@
+/* ÐÀÇÌÅÒÊÀ */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(210,226,241);
+}
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto 0 auto;
+	position: relative;
+	width: 720px;
+	min-width: 720px;
+	margin: 20px auto;
+	height: 490px;
+}
+.searching_job {
+	width: 340px;
+	height: 480px;
+	border-bottom: 35px solid rgb(241,241,241);
+	position: absolute;
+	left: 0;
+	background-color: white;
+	box-shadow: 0 0 10px 8px #bbb;
+}
+
+.offering_job {
+	width: 340px;
+	height: 480px;
+	border-bottom: 35px solid rgb(241,241,241);
+	position: absolute;
+	right: 0;
+	background-color: white;
+	box-shadow: 0 0 10px 8px #bbb;
+}
+
+.center {
+	width: 720px;
+	min-width: 720px;
+	margin: 0 auto;
+}
+
+/* END ÐÀÇÌÅÒÊÀ */
+
+
+
+
+
+
+/* HEADER */
+.about_us > header {
+	background-color: rgb(55, 55, 55);
+	width: 100%;
+	margin: 0;
+	height: 40px;
+	min-width: 720px;
+}
+.enter {
+	float: right;
+}
+
+/* END HEADER */
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+	background-color: #fff;
+	height: 40px;
+	width: 100%;
+	min-width: 720px;
+	box-shadow: inset 0 3px 5px 1px #ccc;
+}
+nav li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0 15px;
+	margin: 10px 0 0 0;
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+nav a {
+	height: 45px;
+	border-right: 1px solid #999;
+	border-left: 1px solid #999;
+}
+/*
+nav a:first-child {
+	border-left: none;
+}
+
+
+.about_us .nav_about_us {
+	border-top: 3px solid rgb(255, 144, 0);
+}
+
+/* END NAVIGATION */
+
+
+
+
+
+
+
+
+
+
+/* CONTENT */
+.searching_job header {
+	background-color: rgb(255, 144, 0);
+	text-align: center;
+	font-family: Arial, Sans-serif;
+	font-size: 16px;
+	color: white;
+	padding: 10px 0;
+	margin-top: 0;
+	height: 35px;
+}
+.searching_job form {
+	padding: 10px 20px;
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 150%;
+}
+
+.offering_job header {
+	background-color: rgb(148, 148, 148);
+	text-align: center;
+	font-family: Arial, Sans-serif;
+	font-size: 16px;
+	color: white;
+	padding: 10px 0;
+	margin-top: 0;s
+}
+
+.offering_job form {
+	padding: 10px 20px;
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+	color: #333;
+	line-height: 150%;
+}
+
+input {
+	width: 290px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: rgb(245, 245, 245);
+	border: none;
+	border-left: 5px solid rgb(230, 230, 230);
+	border-radius: 3px;
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+}
+
+.searching_job input:focus {
+	border-left: 5px solid rgb(255, 144, 0);
+}
+
+.offering_job input:focus,
+.offering_job textarea:focus {
+	border-left: 5px solid rgb(119, 119, 119);
+}
+
+textarea {
+	width: 290px;
+	min-height: 50px;
+	margin: 0 auto;
+	background-color: rgb(245, 245, 245);
+	border: none;
+	border-left: 5px solid rgb(230, 230, 230);
+	border-radius: 3px;
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+}
+
+#salary, #salary2 {
+	width: 80px;
+	margin-right: 20px;
+}
+
+select {
+	width: 80px;
+	background-color: rgb(245, 245, 245);
+	border: none;
+	border-left: 5px solid rgb(230, 230, 230);
+	height: 30px;
+	color: #888;
+}
+
+.button {
+	margin: 10px 0;
+	border-radius: 5px;
+	border-left: none;
+	text-align: center;
+	color: white;
+}
+.searching_job .button {
+	background-color: rgb(254, 162, 39);
+	border-right: 30px solid rgb(255, 144, 0);
+}
+.offering_job .button {
+	background-color: rgb(119, 119, 119);
+	border-right: 30px solid rgb(100, 100, 100);
+}
+
+/* END CONTENT */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+.about_us > footer {
+	clear: both;
+	background-color: rgb(55, 55, 55);
+	width: 100%;
+	height: 35px;
+	min-width: 720px;
+}
+.about_us > footer a {
+	font-family: Helvetica, Tahoma, Arial, Sans-serif;
+	font-size: 11px;
+	color: #777;
+}
+.footer_links a:first-child {
+	border-right: 1px solid #777;
+}
+.footer_links a {
+	padding: 0 10px;
+}
+.footer_links {
+	float: right;
+	margin-top: 8px;
+}
+.footer_label {
+	float: left;
+	margin-top: 10px;
+	width: 300px;
+	height: 30px;
+}
+.footer_label img {
+	height: 20px;
+}
+.footer_label p {
+	float: left;
+}
+
+.clear {
+	clear: both;
+}
+/* END FOOTER */
+
+
+
+

@@ -1,0 +1,48 @@
+.wrapper {
+	position: relative;
+	width: auto;
+	min-width: 340px;
+	height: auto;
+}
+.searching_job, .offering_job {
+	position: static;
+	float: none;
+	margin: 20px auto 30px auto;
+}
+
+.center {
+	width: 100%;
+	min-width: 340px;
+	margin: 0 auto;
+}
+.about_us > header {
+	min-width: 340px;
+}
+
+nav {
+	width: 100%;
+	min-width: 340px;
+}
+
+.about_us > footer {
+	min-width: 340px;
+}
+
+
+.footer_links {
+	float: none;
+	height: 30px;
+	background-color: rgb(55, 55, 55);
+	
+}
+
+.footer_label {
+	float: none;
+	margin-top: 10px;
+	min-width: 300px;
+	height: 30px;
+	background-color: #000;
+	width: 100%;
+	margin: 0;
+}
+
