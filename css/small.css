@@ -1,11 +1,9 @@
 .wrapper {
-	position: relative;
 	width: auto;
 	min-width: 340px;
 	height: auto;
 }
 .searching_job, .offering_job {
-	position: static;
 	float: none;
 	margin: 20px auto 30px auto;
 }

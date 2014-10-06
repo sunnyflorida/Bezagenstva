@@ -15,37 +15,27 @@ img {
 }
 
 .wrapper {
-	min-height: 100%;
-	margin: 0 auto 0 auto;
-	position: relative;
 	width: 720px;
-	min-width: 720px;
 	margin: 20px auto;
 	height: 490px;
 }
-.searching_job {
-	width: 340px;
-	height: 480px;
-	border-bottom: 35px solid rgb(241,241,241);
-	position: absolute;
-	left: 0;
-	background-color: white;
-	box-shadow: 0 0 10px 8px #bbb;
-}
-
+.searching_job, 
 .offering_job {
 	width: 340px;
 	height: 480px;
 	border-bottom: 35px solid rgb(241,241,241);
-	position: absolute;
-	right: 0;
 	background-color: white;
 	box-shadow: 0 0 10px 8px #bbb;
+}
+.searching_job {
+	float: left;
+}
+.offering_job {
+	float: right;
 }
 
 .center {
 	width: 720px;
-	min-width: 720px;
 	margin: 0 auto;
 }
 
@@ -60,12 +50,21 @@ img {
 .about_us > header {
 	background-color: rgb(55, 55, 55);
 	width: 100%;
-	margin: 0;
 	height: 40px;
-	min-width: 720px;
 }
 .enter {
 	float: right;
+	height: 40px;
+	width: 80px;
+}
+.enter p {
+	margin-top: 10px;
+	color: rgb(255, 144, 0);
+	font-size: 12px;
+}
+.enter_pic {
+	float: left;
+	padding: 5px 5px 0 0;
 }
 
 /* END HEADER */
@@ -84,33 +83,31 @@ nav {
 	background-color: #fff;
 	height: 35px;
 	width: 100%;
-	min-width: 720px;
-	box-shadow: inset 0 3px 5px 1px #ccc;
+	box-shadow: inset 0 3px 5px 1px #ccc;	
 }
 nav li{
 	list-style-type: none;
 	display: inline-block;
 	padding: 0 15px;
-	margin: 8px 0 0 0;
-	font-family: Arial, Sans-serif;
-	font-size: 12px;
-	color: #333;
-	font-weight: bold;
-}
-nav li {
+	float: left;
 	border-left: 1px solid #999;
+	margin-top: 5px;
 }
+
+
 nav li:first-child {
 	border-left: none;
 }
-/*
-nav a:first-child {
-	border-left: none;
+
+nav a {
+	font-family: Arial, Sans-serif;
+	font-size: 12px;
+	color: #333;
 }
-*/
 
 .about_us .nav_about_us {
 	border-top: 4px solid rgb(255, 144, 0);
+	margin-top: 0;
 }
 
 /* END NAVIGATION */
@@ -125,8 +122,8 @@ nav a:first-child {
 
 
 /* CONTENT */
-.searching_job header {
-	background-color: rgb(255, 144, 0);
+.searching_job header,
+.offering_job header {
 	text-align: center;
 	font-family: Arial, Sans-serif;
 	font-size: 16px;
@@ -135,24 +132,14 @@ nav a:first-child {
 	margin-top: 0;
 	height: 35px;
 }
-.searching_job form {
-	padding: 10px 20px;
-	font-family: Arial, Sans-serif;
-	font-size: 12px;
-	color: #333;
-	line-height: 150%;
-}
 
+.searching_job header {
+	background-color: rgb(255, 144, 0);
+}
 .offering_job header {
 	background-color: rgb(148, 148, 148);
-	text-align: center;
-	font-family: Arial, Sans-serif;
-	font-size: 16px;
-	color: white;
-	padding: 10px 0;
-	margin-top: 0;s
 }
-
+.searching_job form,
 .offering_job form {
 	padding: 10px 20px;
 	font-family: Arial, Sans-serif;
@@ -161,9 +148,9 @@ nav a:first-child {
 	line-height: 150%;
 }
 
-input {
+input,
+textarea {
 	width: 290px;
-	height: 30px;
 	margin: 0 auto;
 	background-color: rgb(245, 245, 245);
 	border: none;
@@ -171,6 +158,12 @@ input {
 	border-radius: 3px;
 	font-family: Arial, Sans-serif;
 	font-size: 12px;
+}
+input {
+	height: 30px;
+}
+textarea {
+	height: 50px;
 }
 
 
@@ -183,34 +176,23 @@ input {
 	border-left: 5px solid rgb(119, 119, 119);
 }
 
-textarea {
-	width: 290px;
-	min-height: 50px;
-	margin: 0 auto;
-	background-color: rgb(245, 245, 245);
-	border: none;
-	border-left: 5px solid rgb(230, 230, 230);
-	border-radius: 3px;
-	font-family: Arial, Sans-serif;
-	font-size: 12px;
-}
 
 #salary, #salary2{
 	width: 80px;
 	margin-right: 20px;
 }
 #salary3 {
-	width: 85px;
+	width: 80px;
 }
 
 select {
-	width: 80px;
 	background-color: rgb(245, 245, 245);
 	border: none;
 	border-left: 5px solid rgb(230, 230, 230);
+	border-radius: 3px;
 	height: 30px;
-	color: #888;
 }
+
 [placeholder] {
 	padding-left: 10px;
 }
@@ -229,6 +211,11 @@ select {
 .offering_job .button {
 	background-color: rgb(119, 119, 119);
 	border-right: 30px solid rgb(100, 100, 100);
+}
+
+#div_salary {
+	width: 290px;
+	height: 30px;
 }
 
 /* END CONTENT */

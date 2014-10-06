@@ -17,7 +17,12 @@
 	<header>
 		<div class="center">
 			<a href="#"><img src="ico/logo.jpg" class="logo"></a>
-			<a href="#"><img src="ico/enter.jpg" class="enter"></a>
+			<div class="enter">
+				<a href="#">
+					<img src="ico/enter.jpg" class="enter_pic">
+					<p>Войти</p>
+				</a>
+			</div>
 		</div>
 	</header>
 	
@@ -43,13 +48,16 @@
 				
 				<label for="country">СТРАНА</label><br><input type="text" id="country" name="country" placeholder="Введите страну"><br>
 				
-				<label for="salary">ЗАРПЛАТА</label><br><input type="text" id="salary" name="salary" placeholder="0"> <input type="text" name="salary" placeholder="0" id="salary2"> 
+				<label for="salary">ЗАРПЛАТА</label><br>
+				<div id="div_salary">
+				<input type="text" id="salary" name="salary" placeholder="0"><input type="text" name="salary" placeholder="0" id="salary2"> 
 							<select id="salary3">
 								<option>BLR</option>
 								<option>USA</option>
 								<option>EUR</option>
 								<option>RUS</option>
 							</select>
+				</div>
 				
 				<label for="email_search">E-MAIL</label><br><input type="text" id="email_search" name="email_search" placeholder="Введите e-mail"><br>
 				
@@ -64,14 +72,16 @@
 			<form>
 				<label for="description">ОПИСАНИЕ</label><br><textarea type="text" id="description" placeholder="Введите описание"></textarea><br>
 				
-				<label for="salary">ЗАРПЛАТА</label><br><input type="text" id="salary" name="salary" placeholder="0"> <input type="text" name="salary" placeholder="0" id="salary2"> 
+				<label for="salary">ЗАРПЛАТА</label><br>
+				<div id="div_salary">
+				<input type="text" id="salary" name="salary" placeholder="0"> <input type="text" name="salary" placeholder="0" id="salary2"> 
 							<select id="salary3">
 								<option>BLR</option>
 								<option>USA</option>
 								<option>EUR</option>
 								<option>RUS</option>
 							</select>
-				
+				</div>
 				<label for="organization_name">НАЗВАНИЕ ОРГАНИЗАЦИИ</label><br><input type="text" id="organization_name" name="organization_name" placeholder="Введите название"><br>
 				
 				<label for="phone_number">НОМЕР ТЕЛЕФОНА</label><br><input type="text" id="phone_number" name="phone_number" placeholder="Введите номер телефона"><br>
