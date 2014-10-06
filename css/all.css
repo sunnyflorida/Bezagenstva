@@ -95,12 +95,13 @@ nav li{
 	font-family: Arial, Sans-serif;
 	font-size: 12px;
 	color: #333;
+	font-weight: bold;
 }
-nav a {
-	height: 45px;
-	border-right: 1px solid #999;
+nav li {
 	border-left: 1px solid #999;
-	
+}
+nav li:first-child {
+	border-left: none;
 }
 /*
 nav a:first-child {
@@ -209,6 +210,9 @@ select {
 	border-left: 5px solid rgb(230, 230, 230);
 	height: 30px;
 	color: #888;
+}
+[placeholder] {
+	padding-left: 10px;
 }
 
 .button {
